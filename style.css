@@ -1,0 +1,59 @@
+.area{
+    height:23vh;
+    width: 25%;
+    background-color: aqua;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+     /* animation: move linear 8s infinite; */
+    
+   
+    
+
+
+}
+.main{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+   margin-top: 255px;
+}
+.centre img{
+    border-radius: 50%;
+    margin-bottom: -5px;
+    /* background-repeat: space; */
+    /* background-repeat: repeat-x; */
+    animation: rotate linear 8s infinite;
+    /* animation: move linear 16s infinite; */
+   
+    
+}
+.centre{
+    animation: move linear 8s infinite;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+@keyframes rotate{
+   from{
+        transform:rotate(0deg) ;
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+@keyframes move{
+    0%{
+        transform: translateX(-95px);
+    }
+    50%{
+        transform:translateX(95px) ;
+    }
+    100%{
+        transform:translateX(-95px) ;
+    }
+}
+body{
+    padding: 0;
+    margin: 0;
+    background-color: brown;
+}
